@@ -1,0 +1,9 @@
+[package]
+name = "MessagePackage"
+version = "0.0.0"
+
+[addresses]
+MessageAddress = "_"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "ca068ba2" }

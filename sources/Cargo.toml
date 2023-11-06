@@ -1,0 +1,21 @@
+[package]
+name = "move-examples"
+version = "0.1.0"
+authors = ["Aptos Labs <opensource@aptoslabs.com>"]
+repository = "https://github.com/aptos-core/aptos-labs"
+homepage = "https://aptoslabs.com"
+license = "Apache-2.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+aptos-gas = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/aptos-gas/", rev = "ca068ba2" }
+clap = "3.1.8"
+
+aptos-types = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/types/", rev = "ca068ba2" }
+aptos-vm = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/aptos-vm/", rev = "ca068ba2" }
+
+move-deps = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/move-deps/", features = ["table-extension"], rev = "ca068ba2" }
+
+[dev-dependencies]
+tempfile = "3.3.0"

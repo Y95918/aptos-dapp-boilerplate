@@ -1,0 +1,9 @@
+**/node_modules/
+**/.venv
+*.pyc
+aptos-core
+build
+.env
+.aptos
+target
+.idea
